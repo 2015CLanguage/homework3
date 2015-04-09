@@ -2,11 +2,10 @@
 
 int main()
 {
-	float x, y;
-	scanf_s("%f", &x);
-	if (x < 1)y = x;
-	else if (x < 10)y = 2 * x - 1;
-	else y = x*x - 11;
-	printf_s("y=%f\n", y);
+	float a, b, c;
+	scanf_s("%f%f%f", &a, &b, &c);
+	if (a < b)a = b;
+	if (a < c)a = c;
+	printf_s("最大数为%f", a);
 	return 0;
 }
