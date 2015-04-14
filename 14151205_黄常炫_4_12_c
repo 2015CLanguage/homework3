@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+double x,y,a,b,c,d;
+printf("please type 'x'and 'y' ");
+scanf("%lf,%lf",&x,&y);
+a=sqrt((x-2)*(x-2)+(y-2)*(y-2));
+b=sqrt((x-2)*(x-2)+(y+2)*(y+2));
+c=sqrt((x+2)*(x+2)+(y+2)*(y+2));
+d=sqrt((x+2)*(x+2)+(y-2)*(y-2));
+if(a>1&&b>1&&c>1&&d>1)
+printf("the height is 0 \n");
+else printf("the height is 10\n");
+return 0;}
+		
