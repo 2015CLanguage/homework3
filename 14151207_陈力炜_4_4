@@ -1,0 +1,14 @@
+#include<stdio.h>
+void main()
+{
+	int a,b,c,x,y;
+	printf("a=");
+	scanf("%d",&a);
+	printf("b=");
+	scanf("%d",&b);
+	printf("c=");
+	scanf("%d",&c);
+    x=(a>b)?a:b;
+    y=(x>c)?x:c;
+	printf("max=%d\n",y);
+}
