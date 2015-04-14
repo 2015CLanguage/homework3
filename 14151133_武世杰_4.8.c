@@ -4,7 +4,7 @@ int main()
 	float score;
 	char grade;
 	printf("请输入学生的成绩：");
-	scanf_s("%f", &score);
+	scanf("%f", &score);
 	if (score > 100 && score < 0)
 		printf("\n输入成绩不符合要求！");
 	switch ((int)(score / 10))
