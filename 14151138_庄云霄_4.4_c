@@ -18,4 +18,5 @@ int main()
 			a=c;
 	
 	printf("the max num is %d",a);
+return 0;
 }
