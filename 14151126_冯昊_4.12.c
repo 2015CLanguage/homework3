@@ -1,13 +1,16 @@
-#include<stdio.h>
-#include<math.h>
+#include <stdio.h>
+#include <math.h>
 void main()
 {
-	float x,y;
-	int z;
-	printf("请输入点的横纵坐标，用逗号隔开\n");
+	float x,y,h;
+	printf("请依次输入点的横纵坐标:\n");
 	scanf("%f,%f",&x,&y);
-	if((fabs(x)==2)&&(fabs(fabs(y)-fabs(x))==1))
-		z=10;
-	else z=0;
-	printf("该点的建筑物高度为:%d\n",z);
+	if(((x-2)*(x-2)+(y-2)*(y-2)<=1)||((x+2)*(x+2)+(y-2)*(y-2)<=1))
+		h=10;
+	else if(((x+2)*(x+2)+(y+2)*(y+2)<=1)||((x+2)*(x-2)+(y+2)*(y+2)<=1))
+		h=10;
+	else
+		h=0;
+	printf("该点的建筑高度为%6.1f米\n",h);
+	return 0;
 }
