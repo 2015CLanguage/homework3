@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+	float x,y;
+	int h;
+	printf("请输入坐标x和y");
+	scanf("%f,%f",&x,&y);
+	if((x-2)*(x-2)+(y-2)*(y-2)<=1)
+        h=10;
+	else if((x+2)*(x+2)+(y-2)*(y-2)<=1)
+        h=10;
+	else if((x-2)*(x-2)+(y+2)*(y+2)<=1)
+        h=10;
+	else if((x+2)*(x+2)+(y+2)*(y+2)<=1)
+        h=10;
+	else
+		h=0;
+	printf("该点高度=%d米\n",h);
+	return 0;
+}
