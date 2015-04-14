@@ -2,10 +2,10 @@
 int main()
 {
  double i,p;
- int d; 
+ int d;
  printf("请输入当月利润:\n");
  scanf("%lf",&i);
- d=i/100000;
+ d=(int)i/100000;
  switch(d)
  {
  case 0:
