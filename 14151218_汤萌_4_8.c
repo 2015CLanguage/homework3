@@ -17,7 +17,8 @@ int main()
 		case 6: printf("Rate D\n"); break;
 		case 7: printf("Rate C\n"); break;
 		case 8: printf("Rate B\n"); break;
-		case 9: printf("Rate A\n"); break;
+		case 9:
+		case 10: printf("Rate A\n"); break;
 	}
 	return 0;
 }
