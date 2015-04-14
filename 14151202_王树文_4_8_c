@@ -1,0 +1,28 @@
+#include<stdio.h>
+int main()
+{
+	int x;
+	char grade;
+	printf("请输入成绩");
+	scanf("%d",&x);
+	if(x>100)
+	    printf("输入错误");
+	else if(x<0)
+		printf("输入错误");
+	else
+		switch((int)(x/10))
+	{case 10:grade='A';break;
+	 case 9:grade='A';break;
+	 case 8:grade='B';break;
+	 case 7:grade='C';break;
+	 case 6:grade='D';break;
+	 case 5:grade='E';break;
+	 case 4:grade='E';break;
+	 case 3:grade='E';break;
+	 case 2:grade='E';break;
+	 case 1:grade='E';break;
+	 case 0:grade='E';break;
+	}
+	printf("成绩=%d\n,等级=%c\n",x,grade);
+	return 0;
+}
