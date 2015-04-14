@@ -4,9 +4,9 @@
 int main()
 {
 	float x,y,h;
-	printf("请输入坐标x");
+	printf("请输入坐标x：");
 	scanf("%f",&x);
-	printf("请输入坐标y");
+	printf("请输入坐标y：");
 	scanf("%f",&y);
 	if(pow((x-2),2)+pow((y-2),2)<=1||pow((x+2),2)+pow((y-2),2)<=1||pow((x+2),2)+pow((y+2),2)<=1||pow((x-2),2)+pow((y+2),2)<=1)
 	{
