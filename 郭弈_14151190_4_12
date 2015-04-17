@@ -1,0 +1,14 @@
+# include<stdio.h>
+# include<math.h>
+int main()
+{
+	  float a,b,d1,d2,d3,d4;
+	  scanf("(%f,%f)",&a,&b); 
+    d1=((a-2)*(a-2)+(b-2)*(b-2));
+    d2=((a+2)*(a+2)+(b-2)*(b-2));
+    d3=((a-2)*(a-2)+(b+2)*(b+2));
+    d4=((a+2)*(a+2)+(b+2)*(b+2));
+    if(d1<=1||d2<=1||d3<=1||d4<=1) printf("建筑高度为10m");
+    else printf("建筑高度为0m");
+	  return 0;
+}
